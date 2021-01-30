@@ -8,3 +8,17 @@ The bot program is essentially a Python script that will need to be hosted on a 
 1. A server where the bot program can be run
 2. Python 3.x run-time. If you are not fully familiar with Python ecosystem, the simplest way would be to install the Anaconda distribution on your server. Instructions here: https://docs.anaconda.com/anaconda/install/
 3. Python packages needed for the program to function. The ones needed are praw, re and configparser. 
+
+
+### Note: If you have installed Anaconda, you'll only need to install "praw" package manually since rest of the required packages are available in Anaconda by default.
+
+
+## Configuring the bot
+Open "praw.ini" file in any text editor and specify the necessary values as decribed in the file itself. There are additional comments in the file that provide additional details. Please read through them and configure accordingly.
+
+## Running the bot
+Once the praw.ini configuration has been completed, simply launch command prompt (Windows) or Terminal/Shell (Mac/Unix) and execute the following command:
+
+python path/to/bot/code/googleR_bot_reddit.py
+
+### Note: DONOT close the command window after executing the above command. In order for the bot to run continuously, the window needs to remain open. If you don't like to see a window being open all the time, use this help guide to run the python script in background: https://www.geeksforgeeks.org/running-python-program-in-the-background/
